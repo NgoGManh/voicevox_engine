@@ -12,6 +12,6 @@ services:
       - key: VOICEVOX_ENGINE_TARGET
         value: linux-x64-cpu
       - key: VOICEVOX_ENGINE_VERSION
-        value: 0.24.0
+        value: 0.14.4
       - key: VOICEVOX_ENGINE_REPOSITORY
         value: VOICEVOX/voicevox_engine
