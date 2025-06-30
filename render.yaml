@@ -6,8 +6,12 @@ services:
     dockerfilePath: ./Dockerfile
     dockerContext: .
     autoDeploy: true
-    envVars:
-      - key: VV_CPU_NUM_THREADS
-        value: "2"
-    healthCheckPath: /speakers
     startCommand: ./run.sh
+    healthCheckPath: /speakers
+    envVars:
+      - key: VOICEVOX_ENGINE_TARGET
+        value: linux-x64-cpu
+      - key: VOICEVOX_ENGINE_VERSION
+        value: 0.24.0
+      - key: VOICEVOX_ENGINE_REPOSITORY
+        value: VOICEVOX/voicevox_engine
